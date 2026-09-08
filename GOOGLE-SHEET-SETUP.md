@@ -1,94 +1,50 @@
-# Setting up the "Wall of Wits" Google Sheet
+# The "Wall of Wits" Google Sheet
 
-This is the one-time setup for the live content source. `sheet-seed/authors-seed.csv`
-and `sheet-seed/quotes-seed.csv` hold the 61 authors and 79 quotations, ready to
-paste in.
+The site reads its roster and quotations straight from a Google Sheet — no
+server, no secrets. This is already set up; this file documents how, for
+reference or if it ever needs rebuilding.
 
-## 1. Create the Sheet
+## Structure
 
-1. Create a new Google Sheet named **Wall of Wits** in the owner's Google account.
-2. Rename the first tab to `Authors`, add a second tab named `Quotes`.
+**Authors** tab — `Name | Plaque name | Included`
+- **Name** — the author's full name. This is what determines the expected
+  image filenames (see below), so once artwork exists for someone, don't
+  change their Name — use Plaque name instead for how it's displayed.
+- **Plaque name** — optional. What the wall's plaque shows instead of Name
+  (handy for long names). Leave blank to just show Name.
+- **Included** — checkbox. Unticked or deleted rows drop that author from
+  the live wall.
 
-## 2. Authors tab
+**Quotes** tab — `Author | Quotation`
+- **Author** — must match an Authors-tab Name exactly.
+- **Quotation** — the quote text.
 
-Row 1 (header): `Author ID | Name | Plaque name | Included`
+## How it's linked to artwork
 
-- **Column A — Author ID.** Hidden or protected helper column. Leave it blank
-  for a brand-new author — the site's backend fills in a stable lowercase
-  hyphenated slug automatically on its next refresh (within ~90 seconds of the
-  Name being saved). Once set, never edit it by hand.
-- **Column B — Name.** The author's full name, shown in the quotation panel.
-- **Column C — Plaque name.** Optional. What the wall's plaque displays
-  (defaults to Name if blank). Use this to shorten long names, e.g. `Arthur
-  Balfour` instead of `Arthur Balfour, Earl of Balfour`.
-- **Column D — Included.** Checkbox (Insert > Checkbox). Unticked or deleted
-  rows drop that author from the live wall.
+Each author's Name is turned into a filename slug (lowercase, spaces and
+punctuation replaced with hyphens, e.g. "W. H. Auden" → `w-h-auden`) and
+matched against `authors-manifest.js`, which maps that slug to
+`faces/<slug>-open.png` / `faces/<slug>-closed.png` and their centering
+offsets. If an included author has no matching entry, they're silently
+left off the public wall (check the browser console for a warning naming
+the exact expected filenames).
 
-Paste `sheet-seed/authors-seed.csv` starting at A2 (Data > Paste special >
-Values only, or File > Import > Insert new sheet then copy the range across).
-All 61 rows import with `Included` already TRUE and their real IDs already
-filled in (nothing for the backfill step to do on the seed data).
+## Sharing
 
-Add a helper column, say **F — Dropdown label** (can be hidden), with the
-formula (fill down): `=B2&" ("&A2&")"` — this is the source list the Quotes
-tab's dropdown reads from, so quotes stay linked to the same author even after
-a rename (see below).
+The Sheet is set to **Anyone with the link: Viewer** — viewable by anyone
+who has the exact link, but editable only by the owner. It's never linked
+from the site itself or indexed anywhere.
 
-## 3. Quotes tab
+## Adding a brand-new author
 
-Row 1 (header): `Author | Author ID (auto) | Quotation`
+1. New row on Authors: type their Name, tick Included.
+2. Add the two PNGs (`faces/<slug>-open.png`, `faces/<slug>-closed.png`,
+   1024×1024, transparent) and an entry in `authors-manifest.js` with their
+   centering offsets — this is the one step that needs a small commit, not
+   just a Sheet edit. See `README.md`.
+3. Add their quotes on the Quotes tab.
 
-- **Column A — Author.** Data validation dropdown (Data > Data validation >
-  Dropdown from a range) sourced from `Authors!F2:F` (the "Name (id)" helper
-  column above). Pick the author for this quote.
-- **Column B — Author ID (auto).** Hidden helper, formula (fill down):
-  `=IFERROR(REGEXEXTRACT(A2,"\(([^)]+)\)$"),"")`. This is only a visual check —
-  the backend extracts the same ID directly from column A itself, so a
-  quote's link to its author survives a later rename even though the old row's
-  dropdown label keeps showing the pre-rename name until someone reselects it.
-- **Column C — Quotation.** The quote text. Clear it to delete a quote; edit
-  it to replace the live text.
+## Refresh delay
 
-Paste `sheet-seed/quotes-seed.csv` starting at A2. It already contains the
-"Name (id)" label in column A and the plain ID in column B for reference —
-after pasting, re-apply the dropdown validation to column A going forward so
-*new* rows use it (existing pasted rows are already correct).
-
-## 4. Share it with the service account
-
-Create a Google Cloud service account (APIs & Services > Credentials > Create
-service account), enable the **Google Sheets API** for that project, and
-download its JSON key. Then, in the Sheet, click **Share** and invite the
-service account's email (looks like
-`wall-of-wits@your-project.iam.gserviceaccount.com`) as an **Editor** — Editor,
-not Viewer, because the backend needs to write the auto-generated Author ID
-back into column A for brand-new authors.
-
-The Sheet itself stays private — it is never shared publicly, only with that
-one service account and whoever the owner invites by hand.
-
-## 5. Wire up the secrets
-
-From the downloaded JSON key and the Sheet's URL
-(`https://docs.google.com/spreadsheets/d/<SHEET_ID>/edit`), set these in the
-hosting platform's environment variables (see `.env.example`):
-
-- `GOOGLE_SERVICE_ACCOUNT_EMAIL` — the `client_email` field
-- `GOOGLE_PRIVATE_KEY` — the `private_key` field, quotes and all
-- `SHEET_ID` — the ID from the URL
-- `ADMIN_TOKEN` — any long random string, for `/api/validate`
-
-## 6. Verify
-
-Once deployed with those secrets set:
-
-1. Add a temporary quote to an existing author, wait ~90 seconds, refresh the
-   site, confirm it appears.
-2. Edit that quote's text, confirm the change lands.
-3. Delete it, confirm it disappears.
-4. Untick `Included` on a temporary test author row, confirm they vanish from
-   the wall (and any open quote panel for them closes).
-5. Rename an existing author (column B) and confirm their existing quotes are
-   still attached (`/api/validate?token=...` should show no
-   `unknownQuoteAuthors` for them).
-6. Remove the temporary test data afterward.
+The page re-reads the Sheet every 30 seconds. A change typically appears
+within that window, with no redeploy.
