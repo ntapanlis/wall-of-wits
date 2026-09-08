@@ -1,7 +1,10 @@
 # Wall of Wits
 
 A brutalist wall of arched recesses, each holding a quotation author's face.
-Hover or focus opens their eyes; click reveals their quotes.
+Hover or focus opens their eyes; click splits the wall open beneath that
+row, revealing a recessed periwinkle-cement panel with their quotes —
+carved rays mark the selected face; clicking again, another face, Close,
+or Escape closes it.
 
 Live at **https://ntapanlis.github.io/wall-of-wits/**. No visible header,
 random author order per reload, 4/3/2 responsive columns, empty recesses
@@ -25,6 +28,8 @@ it successfully loaded rather than going blank.
 - `faces/` — all 122 portrait/cross PNGs, one flat folder, no per-person
   subfolders
 - `recess-brutalist.png` — the reusable arch tile, repository root
+- `arch-radiance.svg` — the carved-ray overlay shown around the selected arch
+- `quiet-cement.svg` — the periwinkle cement texture tiled behind the open panel
 - `authors-manifest.js` / `authors-manifest.json` — static per-author asset
   metadata (image paths, centering offsets); the `.js` copy is what the page
   actually loads, the `.json` copy is what `scripts/validate-assets.js` reads

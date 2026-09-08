@@ -6,8 +6,9 @@
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#323232;font:16px Georgia,serif}
-.wall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;margin:0}
-.niche{position:relative;aspect-ratio:1;background:url(recess-brutalist.png) center/100% 100%;margin-bottom:0}
+.wall{width:100%;margin:0;--cols:4}
+.row{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr))}
+.niche{position:relative;aspect-ratio:1;background:url(recess-brutalist.png) center/100% 100%}
 .person{position:absolute;left:20.1%;top:14.2%;width:60%;height:60%;border:0;padding:0;background:transparent;cursor:pointer}
 .person img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
 .person .open{opacity:0}
@@ -15,19 +16,50 @@ body{margin:0;background:#fff;color:#323232;font:16px Georgia,serif}
 .person[aria-expanded="true"] .closed,.person:focus-visible .closed{opacity:0}
 @media(hover:hover){.person:hover .open{opacity:1}.person:hover .closed{opacity:0}}
 .person:focus-visible{outline:2px solid #7a6951;outline-offset:4px;border-radius:45%}
-.plaque{position:absolute;left:21%;top:83%;width:58%;height:11%;display:flex;align-items:center;justify-content:center;text-align:center;padding:3px;font:700 clamp(10px,1.05vw,15px)/1.15 Arial,Helvetica,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#42413e;text-shadow:0 1px 0 #e5e3de,0 -1px 1px #777570;pointer-events:none;white-space:pre-line}
-.quotes{position:fixed;z-index:10;bottom:16px;left:50%;transform:translateX(-50%);width:min(800px,calc(100% - 32px));max-height:45vh;overflow:auto;background:#f2f0eb;margin:0;padding:24px 28px;border:1px solid #888;box-shadow:0 8px 35px #0005}
-.quotes[hidden]{display:none}.quotes h2{font-size:25px;font-weight:normal;margin:0 0 22px}
-.quotes blockquote{font-size:22px;line-height:1.55;margin:20px 0 30px;white-space:pre-line}
-.quotes small{font:13px Arial,sans-serif;color:#777}
-.dismiss{float:right;border:1px solid #aaa;background:white;padding:8px 12px;font:14px Arial,sans-serif;cursor:pointer}
-@media(max-width:1100px){.wall{grid-template-columns:repeat(3,minmax(0,1fr))}.plaque{font-size:clamp(10px,1.4vw,15px)}}
-@media(max-width:700px){.wall{grid-template-columns:repeat(2,minmax(0,1fr))}.plaque{font-size:clamp(10px,2.1vw,14px);letter-spacing:.06em}.quotes{padding:20px;margin:0}.quotes blockquote{font-size:19px}}
+.plaque{position:absolute;left:21%;top:83%;width:58%;height:11%;display:flex;align-items:center;justify-content:center;text-align:center;padding:3px;font:700 var(--plaque-font-size,15px)/1.15 Arial,Helvetica,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#42413e;text-shadow:0 1px 0 #e5e3de,0 -1px 1px #777570;pointer-events:none;white-space:pre-line;text-wrap:balance}
+.rays{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3;opacity:0;transition:opacity 220ms}
+.niche.chosen .rays{opacity:1}
 
+/* Opening wall panel: a recessed periwinkle-cement seam that splits the
+   wall open beneath the selected face's row, pushing later rows down. */
+.seam{height:0;overflow:hidden;transition:height 360ms cubic-bezier(.22,.7,.25,1);position:relative}
+.stone{position:relative;padding:78px max(64px,calc((100vw - 820px)/2)) 74px;background-color:#bfc4d5;background-image:url(quiet-cement.svg);background-repeat:repeat;box-shadow:inset 0 8px 10px -7px #29282288,inset 3px 0 5px -4px #29282266,inset -3px 0 5px -4px #29282255;border-top:4px solid #9199b0;border-bottom:3px solid #dce0eb}
+.illumination{position:absolute;inset:27px;pointer-events:none;border:1.5px solid #78829c;box-shadow:0 1px 0 #e5e9f280,inset 0 1px 0 #e5e9f260}
+.illumination:before,.illumination:after{content:"";position:absolute;height:auto}
+.illumination:before{inset:6px;border:1px solid #8986a770}
+.illumination:after{inset:10px;border:1px solid #7c899e40}
+.border-knot{position:absolute;width:90px;height:90px;opacity:.9;z-index:1;filter:drop-shadow(0 1px .25px #e3e6f060)}
+.border-knot.tl{left:-8px;top:-8px}
+.border-knot.tr{right:-8px;top:-8px;transform:rotate(90deg)}
+.border-knot.br{right:-8px;bottom:-8px;transform:rotate(180deg)}
+.border-knot.bl{left:-8px;bottom:-8px;transform:rotate(270deg)}
+.border-medallion{position:absolute;left:50%;width:120px;height:30px;transform:translateX(-50%);z-index:1}
+.border-medallion.top{top:-15px}
+.border-medallion.bottom{bottom:-15px}
+.close{position:absolute;right:5px;top:3px;background:transparent;color:#555e76;border:0;padding:9px;font:19px/1 Arial;cursor:pointer;z-index:2}
+.close:focus-visible{outline:1px solid}
+.quotes{position:relative;opacity:0;transform:translateY(-5px);transition:opacity .2s .09s,transform .3s}
+.seam.revealed .quotes{opacity:1;transform:none}
+blockquote{margin:0;font:italic clamp(21px,2.15vw,31px)/1.48 Georgia,serif;letter-spacing:.005em;color:#303442;text-shadow:0 1px 0 #e7eaf34d;white-space:pre-line;text-align:justify;text-align-last:left;hyphens:auto}
+blockquote+blockquote{margin-top:26px;padding-top:26px;border-top:1px solid #89837740}
+.quotes p{margin:0;font:18px Georgia,serif;color:#54597a}
+
+@media(max-width:1100px){.wall{--cols:3}}
+@media(max-width:700px){
+.wall{--cols:2}
+.plaque{letter-spacing:.06em}
+.stone{padding:70px 48px 65px}
+.illumination{inset:19px}
+.border-knot{width:64px;height:64px}
+.border-medallion{width:96px;height:24px}
+.border-medallion.top{top:-12px}
+.border-medallion.bottom{bottom:-12px}
+blockquote{font-size:20px}
+}
+@media(prefers-reduced-motion:reduce){.seam,.quotes,.rays{transition:none}}
 </style>
 
-<main><div class="wall" aria-label="Wall of arched recesses"></div>
-<section class="quotes" id="quotes" hidden aria-labelledby="author" tabindex="-1"><button class="dismiss" type="button">Close</button><h2 id="author"></h2><div id="quotation-list"></div><small id="note"></small></section></main>
+<main><div class="wall" aria-label="Wall of arched recesses"></div></main>
 <script src="authors-data.js"></script>
 <script src="authors-manifest.js"></script>
 <script>
@@ -88,53 +120,197 @@ function shuffled(items){
  return result;
 }
 let authors=shuffled(window.wallAuthors);
-const wall=document.querySelector('.wall'),panel=document.getElementById('quotes'),list=document.getElementById('quotation-list');
-let selected=null;
-function choose(id){
- selected=id;
- for(const button of wall.querySelectorAll('.person')){const on=button.dataset.id===id;button.setAttribute('aria-expanded',String(on));button.setAttribute('aria-label',button.dataset.name+' — '+(on?'hide':'show')+' quotations')}
- panel.hidden=!id;if(!id)return;
- updatePanel(authors.find(a=>a.id===id));
- panel.scrollTop=0;panel.focus({preventScroll:true});
+const wall=document.querySelector('.wall');
+
+// ---- Opening wall panel: build the seam element once; it is only ever
+// inserted into the flow (via row.after(seam)) when something is selected. ----
+const ORNAMENT_KNOT='<g stroke="#737d99" stroke-width="1.25"><path d="M7 83V28Q7 7 28 7H83M17 75V32Q17 17 32 17H75"/><path d="M13 69Q43 58 31 39Q21 22 14 36M69 13Q58 43 39 31Q22 21 36 14"/></g><g fill="#7e8ca1" fill-opacity=".7" stroke="#5f718b" stroke-width=".65"><path d="M20 60Q15 44 27 43Q30 54 20 60ZM30 49Q44 47 43 35Q32 35 30 49ZM60 20Q44 15 43 27Q54 30 60 20ZM49 30Q47 44 35 43Q35 32 49 30Z"/></g><g transform="translate(17 17)" fill="#8a88a7" stroke="#64617f" stroke-width=".65"><path d="M0 0C-15-8-8-19 0-9C8-19 15-8 0 0C8-15 19-8 9 0C19 8 8 15 0 0C15 8 8 19 0 9C-8 19-15 8 0 0C-8 15-19 8-9 0C-19-8-8-15 0 0Z"/><circle r="3.4" fill="#c2c6d3"/></g><path d="M7 76l4 4-4 4-4-4ZM76 7l4-4 4 4-4 4Z" fill="#c2c6d3" stroke="#7b839c" stroke-width=".7"/>';
+const ORNAMENT_MEDALLION='<g stroke="#737d99" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15h24c12 0 14-9 24-9 6 0 10 4 10 9s-4 9-10 9c-7 0-10-5-7-8 3-3 7-1 7 2M118 15H94c-12 0-14-9-24-9-6 0-10 4-10 9s4 9 10 9c7 0 10-5 7-8-3-3-7-1-7 2"/><path d="M31 15c8 0 10 6 16 6M89 15c-8 0-10 6-16 6" stroke="#9b9bb4"/></g><path d="M60 6c-6-6-11 1-5 5-7 2-3 10 3 6-1 8 8 8 7 0 6 4 10-4 3-6 6-4 1-11-5-5Z" fill="#9795b1" stroke="#75718e" stroke-width=".65"/><circle cx="61.5" cy="12.5" r="2.5" fill="#d7d9e2"/>';
+const seam=document.createElement('section');
+seam.className='seam';
+seam.id='wow-quote-panel';
+seam.setAttribute('role','region');
+seam.innerHTML=
+ '<div class="stone">'
+ +'<div class="illumination" aria-hidden="true">'
+ +'<svg class="border-knot tl" viewBox="0 0 90 90" fill="none" aria-hidden="true">'+ORNAMENT_KNOT+'</svg>'
+ +'<svg class="border-knot tr" viewBox="0 0 90 90" fill="none" aria-hidden="true">'+ORNAMENT_KNOT+'</svg>'
+ +'<svg class="border-knot br" viewBox="0 0 90 90" fill="none" aria-hidden="true">'+ORNAMENT_KNOT+'</svg>'
+ +'<svg class="border-knot bl" viewBox="0 0 90 90" fill="none" aria-hidden="true">'+ORNAMENT_KNOT+'</svg>'
+ +'<svg class="border-medallion top" viewBox="0 0 120 30" fill="none" aria-hidden="true">'+ORNAMENT_MEDALLION+'</svg>'
+ +'<svg class="border-medallion bottom" viewBox="0 0 120 30" fill="none" aria-hidden="true">'+ORNAMENT_MEDALLION+'</svg>'
+ +'</div>'
+ +'<button class="close" type="button" aria-label="Close quotations">×</button>'
+ +'<div class="quotes"></div>'
+ +'</div>';
+seam.inert=true;
+
+function cols(){return Number(getComputedStyle(wall).getPropertyValue('--cols'))||4}
+function byId(id){return authors.find(a=>a.id===id)}
+function mark(id){
+ for(const n of wall.querySelectorAll('.niche[data-id]')){
+ const on=n.dataset.id===id;
+ const button=n.querySelector('.person');
+ n.classList.toggle('chosen',on);
+ button.setAttribute('aria-expanded',String(on));
+ button.setAttribute('aria-label',button.dataset.name+' — '+(on?'hide':'show')+' quotations');
+ }
 }
-function updatePanel(author){
- if(!author)return;
- document.getElementById('author').textContent=author.name;list.replaceChildren();
- if(author.quotes.length){
- for(const text of author.quotes){const quote=document.createElement('blockquote');quote.textContent='“'+text+'”';list.append(quote)}
+function fillQuotes(a){
+ seam.setAttribute('aria-label','Quotations by '+a.name);
+ const list=seam.querySelector('.quotes');
+ list.replaceChildren();
+ if(a.quotes.length){
+ for(const q of a.quotes){const b=document.createElement('blockquote');b.textContent=q;list.append(b)}
  }else{
- const empty=document.createElement('p');empty.textContent='No quotations yet.';list.append(empty);
+ const p=document.createElement('p');p.textContent='No quotations yet.';list.append(p);
  }
- document.getElementById('note').textContent=author.id==='winston-churchill'?'Second quotation paraphrased, as supplied.':'';
 }
-function renderWall(){
- wall.replaceChildren();
- for(const author of authors){
- const cell=document.createElement('div');cell.className='niche';const button=document.createElement('button');button.type='button';button.className='person'+(author.kind==='symbol'?' symbol':'');button.dataset.id=author.id;button.dataset.name=author.name;button.setAttribute('aria-expanded',String(selected===author.id));button.setAttribute('aria-controls','quotes');button.setAttribute('aria-label',author.name+' — '+(selected===author.id?'hide':'show')+' quotations');
- for(const state of ['closed','open']){const image=document.createElement('img');image.className=state;image.style.transform='translate('+(author.offset_x||0)+'%, '+(author.offset_y||0)+'%)';image.src=author[state+'_image'];image.alt='';image.decoding='async';image.loading='lazy';image.width=1024;image.height=1024;button.append(image)}
- const label=document.createElement('span');label.className='plaque';label.dataset.name=(author.display_name||author.name).toUpperCase();label.textContent=label.dataset.name;cell.append(label);button.addEventListener('click',()=>choose(selected===author.id?null:author.id));cell.append(button);wall.append(cell);
+function place(id){
+ const a=byId(id);
+ if(!a)return;
+ const i=authors.findIndex(x=>x.id===id);
+ const row=wall.querySelector('[data-row="'+Math.floor(i/cols())+'"]');
+ if(row)row.after(seam);
+ fillQuotes(a);
+ seam.inert=false;
+}
+const delay=ms=>new Promise(r=>setTimeout(r,matchMedia('(prefers-reduced-motion: reduce)').matches?0:ms));
+let selected=null,desired=null,running=false;
+async function request(id){
+ desired=id;
+ if(running)return;
+ running=true;
+ while(selected!==desired){
+ if(selected){
+ seam.style.overflow='';
+ seam.classList.remove('revealed');
+ seam.style.height='0px';
+ seam.inert=true;
+ mark(null);
+ await delay(370);
+ selected=null;
+ if(seam.parentNode)seam.remove();
  }
- fillRow();fitPlaques();
+ if(!desired)continue;
+ const target=desired;
+ place(target);
+ mark(target);
+ selected=target;
+ seam.style.height='0px';
+ void seam.offsetHeight;
+ seam.style.height=seam.firstElementChild.scrollHeight+'px';
+ seam.classList.add('revealed');
+ await delay(370);
+ if(selected===desired)seam.style.overflow='visible';
+ }
+ running=false;
 }
-function fillRow(){wall.querySelectorAll('.empty').forEach(e=>e.remove());const columns=getComputedStyle(wall).gridTemplateColumns.split(' ').length;const extra=(columns-authors.length%columns)%columns;for(let n=0;n<extra;n++){const cell=document.createElement('div');cell.className='niche empty';cell.setAttribute('aria-label','Empty recess');wall.append(cell)}}
+
 function fitPlaques(){
- const ctx=document.createElement('canvas').getContext('2d');
- for(const label of wall.querySelectorAll('.plaque')){
- const s=getComputedStyle(label),text=label.dataset.name;ctx.font=s.fontWeight+' '+s.fontSize+' '+s.fontFamily;
- const measure=t=>ctx.measureText(t).width+Math.max(0,t.length-1)*parseFloat(s.letterSpacing||0);
- if(measure(text)<=label.clientWidth-6){label.textContent=text;continue}
- const words=text.split(' ');let best=text,score=Infinity;
- for(let i=1;i<words.length;i++){const a=words.slice(0,i).join(' '),b=words.slice(i).join(' '),cost=Math.max(measure(a),measure(b));if(cost<score){score=cost;best=a+'\n'+b}}
- label.textContent=best;
+ const plaques=[...wall.querySelectorAll('.plaque')];
+ if(!plaques.length)return;
+ const w=window.innerWidth;
+ const cap=w<=700?Math.min(14,Math.max(10,w*0.021)):w<=1100?Math.min(15,Math.max(10,w*0.014)):Math.min(15,Math.max(10,w*0.0105));
+ let size=cap;
+ const floor=8;
+ const fits=()=>plaques.every(p=>p.scrollHeight<=p.clientHeight+0.5&&p.scrollWidth<=p.clientWidth+0.5);
+ wall.style.setProperty('--plaque-font-size',size+'px');
+ void wall.offsetHeight;
+ while(size>floor&&!fits()){
+ size-=0.5;
+ wall.style.setProperty('--plaque-font-size',size+'px');
+ void wall.offsetHeight;
  }
 }
-new ResizeObserver(()=>{fillRow();fitPlaques()}).observe(wall);renderWall();
-function close(){const id=selected;choose(null);if(id){const btn=wall.querySelector('[data-id="'+id+'"]');if(btn)btn.focus()}}
-document.querySelector('.dismiss').addEventListener('click',close);document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+
+function renderWall(){
+ const n=cols();
+ wall.querySelectorAll('.row').forEach(r=>r.remove());
+ if(seam.parentNode)seam.remove();
+ const padded=[...authors];
+ while(padded.length%n)padded.push(null);
+ for(let i=0;i<padded.length;i+=n){
+ const row=document.createElement('div');
+ row.className='row';
+ row.dataset.row=String(i/n);
+ for(const author of padded.slice(i,i+n)){
+ const cell=document.createElement('div');
+ cell.className='niche';
+ if(author){
+ cell.dataset.id=author.id;
+ const button=document.createElement('button');
+ button.type='button';
+ button.className='person'+(author.kind==='symbol'?' symbol':'');
+ button.dataset.id=author.id;
+ button.dataset.name=author.name;
+ const isSelected=selected===author.id;
+ button.setAttribute('aria-expanded',String(isSelected));
+ button.setAttribute('aria-controls','wow-quote-panel');
+ button.setAttribute('aria-label',author.name+' — '+(isSelected?'hide':'show')+' quotations');
+ for(const state of ['closed','open']){
+ const image=document.createElement('img');
+ image.className=state;
+ image.style.transform='translate('+(author.offset_x||0)+'%, '+(author.offset_y||0)+'%)';
+ image.src=author[state+'_image'];
+ image.alt='';image.decoding='async';image.loading='lazy';image.width=1024;image.height=1024;
+ button.append(image);
+ }
+ button.addEventListener('click',()=>request(selected===author.id?null:author.id));
+ const label=document.createElement('span');
+ label.className='plaque';
+ label.textContent=(author.display_name||author.name).toUpperCase();
+ const rays=document.createElement('img');
+ rays.className='rays';rays.src='arch-radiance.svg';rays.alt='';rays.setAttribute('aria-hidden','true');
+ cell.append(button,label,rays);
+ if(isSelected)cell.classList.add('chosen');
+ }else{
+ cell.setAttribute('aria-label','Empty recess');
+ }
+ row.append(cell);
+ }
+ wall.append(row);
+ }
+ fitPlaques();
+ if(selected){
+ const i=authors.findIndex(a=>a.id===selected);
+ const a=byId(selected);
+ if(i>=0&&a){
+ const row=wall.querySelector('[data-row="'+Math.floor(i/n)+'"]');
+ if(row){
+ row.after(seam);
+ fillQuotes(a);
+ seam.classList.add('revealed');
+ seam.inert=false;
+ seam.style.height=seam.firstElementChild.scrollHeight+'px';
+ seam.style.overflow='visible';
+ }
+ }
+ }
+}
+let renderTimer;
+function safeRender(){
+ clearTimeout(renderTimer);
+ if(running){renderTimer=setTimeout(safeRender,80);return}
+ renderWall();
+}
+new ResizeObserver(()=>{clearTimeout(renderTimer);renderTimer=setTimeout(safeRender,100)}).observe(wall);
+renderWall();
+
+seam.querySelector('.close').addEventListener('click',()=>{
+ const id=selected;
+ request(null).then(()=>{if(id){const btn=wall.querySelector('.person[data-id="'+id+'"]');if(btn)btn.focus()}});
+});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&selected){
+ const id=selected;
+ request(null).then(()=>{const btn=wall.querySelector('.person[data-id="'+id+'"]');if(btn)btn.focus()});
+ }
+});
 
 // Live content: reconcile with the Sheet without ever reshuffling or
 // clearing the wall on a failed/empty-looking request.
-function wallSignature(list){return list.map(a=>[a.id,a.display_name||a.name,a.offset_x,a.offset_y,a.quotes.join('|')].join('')).join('')}
+function wallSignature(list){return list.map(a=>[a.id,a.display_name||a.name,a.offset_x,a.offset_y,a.quotes.join('|')].join('')).join('')}
 function reconcile(liveAuthors){
  const before=wallSignature(authors);
  const liveIds=new Set(liveAuthors.map(a=>a.id));
@@ -143,12 +319,8 @@ function reconcile(liveAuthors){
  for(const a of authors){Object.assign(a,liveAuthors.find(l=>l.id===a.id))}
  const additions=shuffled(liveAuthors.filter(a=>!existingIds.has(a.id)));
  authors.push(...additions);
- // Only touch the DOM (and reset any currently-hovered face to closed
- // eyes) when something actually changed, so a routine no-op poll is
- // invisible to whoever is on the page.
- if(wallSignature(authors)!==before)renderWall();
- if(selected&&!liveIds.has(selected)){choose(null)}
- else if(selected){updatePanel(authors.find(a=>a.id===selected))}
+ if(selected&&!liveIds.has(selected))request(null);
+ if(wallSignature(authors)!==before)safeRender();
 }
 async function refreshFromSheet(){
  try{
