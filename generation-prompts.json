@@ -1,0 +1,239 @@
+{
+  "method": "Built-in image generator; authorized background removal; closed-eye regions blended into the open image to preserve alignment",
+  "portraits": [
+    {
+      "author": "Johann Wolfgang von Goethe",
+      "open_prompt": "Use case: style-transfer. Create ONE isolated entire HEAD of Johann Wolfgang von Goethe, eyes OPEN, near frontal upright pose, neutral expression. Reference1 identity, reference2 graphite STYLE ONLY (do not copy Churchill face). Detailed realistic delicate gray pencil hatching, opaque pale face interior. Include hair ears chin beard if appropriate, no neck shoulders clothing hands props labels borders or shadows outside silhouette. Head centered square canvas, hair top at10%, chin at90%, eyes near52%. Match identity and age of reference1, turn toward viewer. Background genuinely transparent; if transparency unavailable use uniform vivid chroma green #14f014 only, never white or checkerboard. Grayscale head entirely, no green on head. One head only."
+    },
+    {
+      "author": "Ralph Waldo Emerson",
+      "open_prompt": "Use case: style-transfer. Create ONE isolated entire HEAD of Ralph Waldo Emerson, eyes OPEN, near frontal upright pose, neutral expression. Reference1 identity, reference2 graphite STYLE ONLY (do not copy Churchill face). Detailed realistic delicate gray pencil hatching, opaque pale face interior. Include hair ears chin beard if appropriate, no neck shoulders clothing hands props labels borders or shadows outside silhouette. Head centered square canvas, hair top at10%, chin at90%, eyes near52%. Match identity and age of reference1, turn toward viewer. Background genuinely transparent; if transparency unavailable use uniform vivid chroma green #14f014 only, never white or checkerboard. Grayscale head entirely, no green on head. One head only."
+    },
+    {
+      "author": "Arthur Balfour, Earl of Balfour",
+      "open_prompt": "Use case: style-transfer. Create ONE isolated entire HEAD of Arthur Balfour, Earl of Balfour, eyes OPEN, near frontal upright pose, neutral expression. Reference1 identity, reference2 graphite STYLE ONLY (do not copy Churchill face). Detailed realistic delicate gray pencil hatching, opaque pale face interior. Include hair ears chin beard if appropriate, no neck shoulders clothing hands props labels borders or shadows outside silhouette. Head centered square canvas, hair top at10%, chin at90%, eyes near52%. Match identity and age of reference1, turn toward viewer. Background genuinely transparent; if transparency unavailable use uniform vivid chroma green #14f014 only, never white or checkerboard. Grayscale head entirely, no green on head. One head only."
+    },
+    {
+      "author": "Saint Francis of Assisi",
+      "open_prompt": "Use case: style-transfer. Create ONE isolated entire HEAD of Saint Francis of Assisi, eyes OPEN, near frontal upright pose, neutral expression. Reference1 identity, reference2 graphite STYLE ONLY (do not copy Churchill face). Detailed realistic delicate gray pencil hatching, opaque pale face interior. Include hair ears chin beard if appropriate, no neck shoulders clothing hands props labels borders or shadows outside silhouette. Head centered square canvas, hair top at10%, chin at90%, eyes near52%. Match identity and age of reference1, turn toward viewer. Background genuinely transparent; if transparency unavailable use uniform vivid chroma green #14f014 only, never white or checkerboard. Grayscale head entirely, no green on head. One head only."
+    },
+    {
+      "author": "George Washington",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of George Washington, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Samuel Johnson",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Samuel Johnson, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "G. K. Chesterton",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of G. K. Chesterton, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Conor McPherson",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Conor McPherson, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Geoffrey Chaucer",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Geoffrey Chaucer, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Lord Byron",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Lord Byron, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "C. S. Lewis",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of C. S. Lewis, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Mark Twain",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Mark Twain, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Milan Kundera",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Milan Kundera, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "J. L. Carr",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of J. L. Carr, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Alexander Pope",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Alexander Pope, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Archimedes",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Archimedes, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "David Senra",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of David Senra, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "Friedrich Nietzsche",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Friedrich Nietzsche, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "William Faulkner",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of William Faulkner, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Christopher Hitchens",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Christopher Hitchens, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "John Adams",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of John Adams, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "Immanuel Kant",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Immanuel Kant, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "Virgil",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Virgil, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "David Brooks",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of David Brooks, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "Augustus",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Augustus, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "Heraclitus",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Heraclitus, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "John Milton",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of John Milton, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "George Bernard Shaw",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of George Bernard Shaw, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. If ancient sculpture or traditional portrait interpret as living human graphite face; no anachronistic eyewear. No headwear unless present in reference."
+    },
+    {
+      "author": "Lao Tzu",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Lao Tzu, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits and busts interpreted as living human face; no invented eyewear or accessories."
+    },
+    {
+      "author": "André Gide",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of André Gide, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Thomas Babington Macaulay",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Thomas Babington Macaulay, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits and busts interpreted as living human face; no invented eyewear or accessories."
+    },
+    {
+      "author": "Lady Lytton",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Lady Lytton, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits and busts interpreted as living human face; no invented eyewear or accessories."
+    },
+    {
+      "author": "W. H. Auden",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of W. H. Auden, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits and busts interpreted as living human face; no invented eyewear or accessories."
+    },
+    {
+      "author": "Socrates",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Socrates, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits and busts interpreted as living human face; no invented eyewear or accessories."
+    },
+    {
+      "author": "Charlotte Aïssé",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Charlotte Aïssé, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits and busts interpreted as living human face; no invented eyewear or accessories."
+    },
+    {
+      "author": "Evelyn Waugh",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Evelyn Waugh, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Ambrose Bierce",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Ambrose Bierce, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits interpreted as living human graphite head; no anachronistic accessories."
+    },
+    {
+      "author": "Henry II of England",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Henry II of England, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits interpreted as living human graphite head; no anachronistic accessories."
+    },
+    {
+      "author": "Saint Augustine",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Saint Augustine, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits interpreted as living human graphite head; no anachronistic accessories."
+    },
+    {
+      "author": "Edward Bulwer-Lytton",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Edward Bulwer-Lytton, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits interpreted as living human graphite head; no anachronistic accessories."
+    },
+    {
+      "author": "Thomas Henry Huxley",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Thomas Henry Huxley, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits interpreted as living human graphite head; no anachronistic accessories."
+    },
+    {
+      "author": "Juvenal",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Juvenal, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin. Traditional portraits interpreted as living human graphite head; no anachronistic accessories."
+    },
+    {
+      "author": "James Russell Lowell",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of James Russell Lowell, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Arthur Schopenhauer",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Arthur Schopenhauer, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Harry Goodhart-Rendel",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Harry Goodhart-Rendel, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Abraham Maslow",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Abraham Maslow, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Michel Foucault",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Michel Foucault, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Boris Yeltsin",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Boris Yeltsin, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Henry David Thoreau",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Henry David Thoreau, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "J. Edgar Hoover",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of J. Edgar Hoover, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Walter Benjamin",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Walter Benjamin, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Henry Wadsworth Longfellow",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Henry Wadsworth Longfellow, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Kwame Nkrumah",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Kwame Nkrumah, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Max Planck",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of Max Planck, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "David Paul Kuhn",
+      "open_prompt": "Use case: style-transfer. ONE isolated entire HEAD of David Paul Kuhn, eyes OPEN, near frontal upright pose, calm neutral expression. Reference1 identity; reference2 detailed delicate graphite STYLE only, do not copy Churchill features. Realistic monochrome pale opaque face, fine pencil hatching, match reference identity age hair beard glasses. Whole head hair ears chin included, no neck clothing shoulders hands props text. Centered square canvas 10% margin, eyes about52% height. Background solid uniform vivid chroma green #14f014 for authorized background removal, no white/checkerboard, no green inside head. Face only, nothing below chin."
+    },
+    {
+      "author": "Albert Camus",
+      "open_prompt": "Turn this photograph of Albert Camus into a fine graphite pencil portrait illustration. Show just his face and hair, front-facing, eyes open, no shoulders. Soft realistic pencil shading, calm expression. Centre on a square transparent canvas. No text or border."
+    }
+  ],
+  "closed_eye_prompts": [
+    "Edit ONLY both eyes to be naturally fully CLOSED with relaxed eyelids. Preserve exact eyebrows nose mouth expression hair glasses silhouette scale position and pencil texture everywhere else. Same canvas and background. Do not redraw or move head, do not add a neck. Only eyelids change.",
+    "A gentle graphite portrait edit: show this same person resting with both eyelids softly closed. Retain the same facial features, head placement, size, hair and drawing style. Keep the surrounding background unchanged. This is the alternate resting state for an interactive literary portrait gallery.",
+    "Use case: style-transfer. Draw a graphite pencil portrait of J. Edgar Hoover, with both eyes gently closed. Reference 1 is the historical identity reference; reference 2 defines the required head position, proportions, size and graphite style. Match reference 2 closely, only closing his eyes. Plain background, no text. For an interactive collection of quotation authors.",
+    "Turn this photograph of Albert Camus into a fine graphite pencil portrait illustration, with his eyes gently closed as if resting. Show just his face and hair, front-facing, no shoulders. Soft realistic pencil shading, calm expression. Centre on a square canvas. No text or border."
+  ],
+  "bible": "Use case: stylized-concept. One isolated shining Christian Latin cross for a wall of graphite faces in brutalist concrete niches. Austere sculptural pale stone cross, front elevation, subtly beveled edges, refined realistic graphite pencil hatching, delicate straight silver-gray rays of light radiating outward from intersection. Monochrome only. Centered square canvas with broad10% margins, whole cross and rays contained. No pedestal scenery wall niche frame lettering or ornaments. Grayscale cross opaque with bright white highlights and drawn rays, solid vivid green #14f014 background for authorized extraction to transparent PNG. No checkerboard. Calm sacred luminous but restrained, matches pencil architectural draft and detailed graphite portrait collection.",
+  "plain_cross": "Edit this graphite stone cross asset: remove ALL the radiant lines, rays, glow and halo around it. Leave only the solid bevelled cross. Preserve the exact cross shape, stone/pencil texture, shading, position, scale and 1024-square canvas. Everything outside the solid cross should be genuinely transparent, with no background or cast shadow. This is the plain resting state paired with the original shining state for a webpage.",
+  "cross_finishing": "Background removal and alignment to the original cross; the same solid cross is composited into both states.",
+  "hoover_blink_fix": "Close upper eyelids only, keep eye corners and lower eyelid positions anchored, eyebrows and all other features unchanged. Composite only the two eyelid regions over the existing open image."
+}

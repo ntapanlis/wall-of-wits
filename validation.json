@@ -1,0 +1,30 @@
+{
+  "project": "Wall of Wits",
+  "authors": 61,
+  "quotes": 79,
+  "portrait_pairs": 60,
+  "cross_pairs": 1,
+  "pngs_in_faces": 122,
+  "columns": [
+    4,
+    3,
+    2
+  ],
+  "empty_recesses_at_current_count": {
+    "4_columns": 3,
+    "3_columns": 2,
+    "2_columns": 1
+  },
+  "maximum_center_error_in_tile_percentage_points": 2.9999999995311555e-06,
+  "checks": [
+    "all asset paths exist",
+    "1024px RGBA with transparency",
+    "identical paired portrait alpha",
+    "geometric centering against visible bounds",
+    "JavaScript syntax",
+    "shuffle retains each author once",
+    "no visible header in markup"
+  ],
+  "visual_review": "Goethe before/after alignment composite inspected; all portrait pairs previously inspected. Browser interaction was not automated.",
+  "hoover_blink_fix": "Regenerated eyelids; paired alpha and every pixel outside the two eye masks verified identical."
+}

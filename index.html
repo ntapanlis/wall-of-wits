@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wall of Wits</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#323232;font:16px Georgia,serif}
+.wall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;margin:0}
+.niche{position:relative;aspect-ratio:1;background:url(recess-brutalist.png) center/100% 100%;margin-bottom:0}
+.person{position:absolute;left:20.1%;top:14.2%;width:60%;height:60%;border:0;padding:0;background:transparent;cursor:pointer}
+.person img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.person .open{opacity:0}
+.person[aria-expanded="true"] .open,.person:focus-visible .open{opacity:1}
+.person[aria-expanded="true"] .closed,.person:focus-visible .closed{opacity:0}
+@media(hover:hover){.person:hover .open{opacity:1}.person:hover .closed{opacity:0}}
+.person:focus-visible{outline:2px solid #7a6951;outline-offset:4px;border-radius:45%}
+.plaque{position:absolute;left:21%;top:83%;width:58%;height:11%;display:flex;align-items:center;justify-content:center;text-align:center;padding:3px;font:700 clamp(10px,1.05vw,15px)/1.15 Arial,Helvetica,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#42413e;text-shadow:0 1px 0 #e5e3de,0 -1px 1px #777570;pointer-events:none;white-space:pre-line}
+.quotes{position:fixed;z-index:10;bottom:16px;left:50%;transform:translateX(-50%);width:min(800px,calc(100% - 32px));max-height:45vh;overflow:auto;background:#f2f0eb;margin:0;padding:24px 28px;border:1px solid #888;box-shadow:0 8px 35px #0005}
+.quotes[hidden]{display:none}.quotes h2{font-size:25px;font-weight:normal;margin:0 0 22px}
+.quotes blockquote{font-size:22px;line-height:1.55;margin:20px 0 30px;white-space:pre-line}
+.quotes small{font:13px Arial,sans-serif;color:#777}
+.dismiss{float:right;border:1px solid #aaa;background:white;padding:8px 12px;font:14px Arial,sans-serif;cursor:pointer}
+@media(max-width:1100px){.wall{grid-template-columns:repeat(3,minmax(0,1fr))}.plaque{font-size:clamp(10px,1.4vw,15px)}}
+@media(max-width:700px){.wall{grid-template-columns:repeat(2,minmax(0,1fr))}.plaque{font-size:clamp(10px,2.1vw,14px);letter-spacing:.06em}.quotes{padding:20px;margin:0}.quotes blockquote{font-size:19px}}
+
+</style>
+
+<main><div class="wall" aria-label="Wall of arched recesses"></div>
+<section class="quotes" id="quotes" hidden aria-labelledby="author" tabindex="-1"><button class="dismiss" type="button">Close</button><h2 id="author"></h2><div id="quotation-list"></div><small id="note"></small></section></main>
+<script src="authors-data.js"></script>
+<script>
+// REFRESH_INTERVAL_MS documents the live-content behaviour: the API caches
+// Sheet reads for up to 60s, and an already-open page re-polls on a
+// comparable schedule, so an edit can take up to ~90s to appear.
+const REFRESH_INTERVAL_MS=30000;
+function shuffled(items){
+ const result=[...items];
+ for(let i=result.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[result[i],result[j]]=[result[j],result[i]]}
+ return result;
+}
+let authors=shuffled(window.wallAuthors);
+const wall=document.querySelector('.wall'),panel=document.getElementById('quotes'),list=document.getElementById('quotation-list');
+let selected=null;
+function choose(id){
+ selected=id;
+ for(const button of wall.querySelectorAll('.person')){const on=button.dataset.id===id;button.setAttribute('aria-expanded',String(on));button.setAttribute('aria-label',button.dataset.name+' — '+(on?'hide':'show')+' quotations')}
+ panel.hidden=!id;if(!id)return;
+ updatePanel(authors.find(a=>a.id===id));
+ panel.scrollTop=0;panel.focus({preventScroll:true});
+}
+function updatePanel(author){
+ if(!author)return;
+ document.getElementById('author').textContent=author.name;list.replaceChildren();
+ if(author.quotes.length){
+ for(const text of author.quotes){const quote=document.createElement('blockquote');quote.textContent='“'+text+'”';list.append(quote)}
+ }else{
+ const empty=document.createElement('p');empty.textContent='No quotations yet.';list.append(empty);
+ }
+ document.getElementById('note').textContent=author.id==='winston-churchill'?'Second quotation paraphrased, as supplied.':'';
+}
+function renderWall(){
+ wall.replaceChildren();
+ for(const author of authors){
+ const cell=document.createElement('div');cell.className='niche';const button=document.createElement('button');button.type='button';button.className='person'+(author.kind==='symbol'?' symbol':'');button.dataset.id=author.id;button.dataset.name=author.name;button.setAttribute('aria-expanded',String(selected===author.id));button.setAttribute('aria-controls','quotes');button.setAttribute('aria-label',author.name+' — '+(selected===author.id?'hide':'show')+' quotations');
+ for(const state of ['closed','open']){const image=document.createElement('img');image.className=state;image.style.transform='translate('+(author.offset_x||0)+'%, '+(author.offset_y||0)+'%)';image.src=author[state+'_image'];image.alt='';image.decoding='async';image.loading='lazy';image.width=1024;image.height=1024;button.append(image)}
+ const label=document.createElement('span');label.className='plaque';label.dataset.name=(author.display_name||author.name).toUpperCase();label.textContent=label.dataset.name;cell.append(label);button.addEventListener('click',()=>choose(selected===author.id?null:author.id));cell.append(button);wall.append(cell);
+ }
+ fillRow();fitPlaques();
+}
+function fillRow(){wall.querySelectorAll('.empty').forEach(e=>e.remove());const columns=getComputedStyle(wall).gridTemplateColumns.split(' ').length;const extra=(columns-authors.length%columns)%columns;for(let n=0;n<extra;n++){const cell=document.createElement('div');cell.className='niche empty';cell.setAttribute('aria-label','Empty recess');wall.append(cell)}}
+function fitPlaques(){
+ const ctx=document.createElement('canvas').getContext('2d');
+ for(const label of wall.querySelectorAll('.plaque')){
+ const s=getComputedStyle(label),text=label.dataset.name;ctx.font=s.fontWeight+' '+s.fontSize+' '+s.fontFamily;
+ const measure=t=>ctx.measureText(t).width+Math.max(0,t.length-1)*parseFloat(s.letterSpacing||0);
+ if(measure(text)<=label.clientWidth-6){label.textContent=text;continue}
+ const words=text.split(' ');let best=text,score=Infinity;
+ for(let i=1;i<words.length;i++){const a=words.slice(0,i).join(' '),b=words.slice(i).join(' '),cost=Math.max(measure(a),measure(b));if(cost<score){score=cost;best=a+'\n'+b}}
+ label.textContent=best;
+ }
+}
+new ResizeObserver(()=>{fillRow();fitPlaques()}).observe(wall);renderWall();
+function close(){const id=selected;choose(null);if(id){const btn=wall.querySelector('[data-id="'+id+'"]');if(btn)btn.focus()}}
+document.querySelector('.dismiss').addEventListener('click',close);document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+
+// Live content: reconcile with /api/authors without ever reshuffling or
+// clearing the wall on a failed/empty-looking request.
+function wallSignature(list){return list.map(a=>[a.id,a.display_name||a.name,a.offset_x,a.offset_y,a.quotes.join('|')].join('')).join('')}
+function reconcile(liveAuthors){
+ const before=wallSignature(authors);
+ const liveIds=new Set(liveAuthors.map(a=>a.id));
+ const existingIds=new Set(authors.map(a=>a.id));
+ authors=authors.filter(a=>liveIds.has(a.id));
+ for(const a of authors){Object.assign(a,liveAuthors.find(l=>l.id===a.id))}
+ const additions=shuffled(liveAuthors.filter(a=>!existingIds.has(a.id)));
+ authors.push(...additions);
+ // Only touch the DOM (and reset any currently-hovered face to closed
+ // eyes) when something actually changed, so a routine no-op poll is
+ // invisible to whoever is on the page.
+ if(wallSignature(authors)!==before)renderWall();
+ if(selected&&!liveIds.has(selected)){choose(null)}
+ else if(selected){updatePanel(authors.find(a=>a.id===selected))}
+}
+async function refreshFromSheet(){
+ try{
+ const res=await fetch('/api/authors',{cache:'no-store'});
+ if(!res.ok)throw new Error('status '+res.status);
+ const data=await res.json();
+ if(Array.isArray(data.authors))reconcile(data.authors);
+ }catch(err){
+ console.warn('Wall of Wits: live refresh failed, keeping last content',err);
+ }
+}
+refreshFromSheet();
+setInterval(refreshFromSheet,REFRESH_INTERVAL_MS);
+</script>
+</html>

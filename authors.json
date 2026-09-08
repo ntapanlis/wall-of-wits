@@ -1,0 +1,753 @@
+[
+  {
+    "id": "william-shakespeare",
+    "name": "William Shakespeare",
+    "closed_image": "faces/william-shakespeare-closed.png",
+    "open_image": "faces/william-shakespeare-open.png",
+    "quotes": [
+      "Why then the world’s mine oyster, which I with sword will open.",
+      "Those friends thou hast, and their adoption tried,\nGrapple them to thy soul with hoops of steel;\nBut do not dull thy palm with entertainment\nOf each new-hatch'd, unfledg'd comrade.",
+      "The evil that men do lives after them; the good is oft interred with their bones",
+      "There are more things in heaven and earth, Horatio,\nThan are dreamt of in your philosophy."
+    ],
+    "display_name": "William Shakespeare",
+    "offset_x": 0.0,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "johann-wolfgang-von-goethe",
+    "name": "Johann Wolfgang von Goethe",
+    "closed_image": "faces/johann-wolfgang-von-goethe-closed.png",
+    "open_image": "faces/johann-wolfgang-von-goethe-open.png",
+    "quotes": [
+      "A good parent gives a child but two things; the one is roots, the other, wings."
+    ],
+    "display_name": "Johann Wolfgang von Goethe",
+    "offset_x": -4.29688,
+    "offset_y": -0.73242
+  },
+  {
+    "id": "ralph-waldo-emerson",
+    "name": "Ralph Waldo Emerson",
+    "closed_image": "faces/ralph-waldo-emerson-closed.png",
+    "open_image": "faces/ralph-waldo-emerson-open.png",
+    "quotes": [
+      "In the minds of geniuses, we find – once more - our own neglected thoughts."
+    ],
+    "display_name": "Ralph Waldo Emerson",
+    "offset_x": 0.09766,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "arthur-balfour-earl-of-balfour",
+    "name": "Arthur Balfour, Earl of Balfour",
+    "closed_image": "faces/arthur-balfour-earl-of-balfour-closed.png",
+    "open_image": "faces/arthur-balfour-earl-of-balfour-open.png",
+    "quotes": [
+      "Nothing matters very much, and few things matter at all"
+    ],
+    "display_name": "Arthur Balfour",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "saint-francis-of-assisi",
+    "name": "Saint Francis of Assisi",
+    "closed_image": "faces/saint-francis-of-assisi-closed.png",
+    "open_image": "faces/saint-francis-of-assisi-open.png",
+    "quotes": [
+      "He who works with his hands is a laborer.\nHe who works with his hands and his head is a craftsman.\nHe who works with his hands and his head and his heart is an artist.",
+      "The measure of love is to love without measure."
+    ],
+    "display_name": "Saint Francis of Assisi",
+    "offset_x": -0.09766,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "george-washington",
+    "name": "George Washington",
+    "closed_image": "faces/george-washington-closed.png",
+    "open_image": "faces/george-washington-open.png",
+    "quotes": [
+      "In the composition of the human frame there is a good deal of inflammable matter, however dormant it may lie for a time, and like an intimate acquaintance of yours, when the torch is put to it, that which is within you may burst into a blaze"
+    ],
+    "display_name": "George Washington",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "samuel-johnson",
+    "name": "Samuel Johnson",
+    "closed_image": "faces/samuel-johnson-closed.png",
+    "open_image": "faces/samuel-johnson-open.png",
+    "quotes": [
+      "Is not a patron, my lord, one who looks with unconcern on a man struggling for life in the water, and when he has reached ground, encumbers him with help?",
+      "How small, of all that human hearts endure,\nThat part which laws or kings can cause or cure."
+    ],
+    "display_name": "Samuel Johnson",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "g-k-chesterton",
+    "name": "G. K. Chesterton",
+    "closed_image": "faces/g-k-chesterton-closed.png",
+    "open_image": "faces/g-k-chesterton-open.png",
+    "quotes": [
+      "Humour can get in under the door while seriousness is still fumbling at the handle.",
+      "Angels can fly because they take themselves lightly"
+    ],
+    "display_name": "G. K. Chesterton",
+    "offset_x": -0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "conor-mcpherson",
+    "name": "Conor McPherson",
+    "closed_image": "faces/conor-mcpherson-closed.png",
+    "open_image": "faces/conor-mcpherson-open.png",
+    "quotes": [
+      "Til tell you — there’s not one morning I don't wake up with her name in the room."
+    ],
+    "display_name": "Conor McPherson",
+    "offset_x": 0.0,
+    "offset_y": -0.09766
+  },
+  {
+    "id": "geoffrey-chaucer",
+    "name": "Geoffrey Chaucer",
+    "closed_image": "faces/geoffrey-chaucer-closed.png",
+    "open_image": "faces/geoffrey-chaucer-open.png",
+    "quotes": [
+      "He who sups with the devil should have a long spoon"
+    ],
+    "display_name": "Geoffrey Chaucer",
+    "offset_x": 0.04883,
+    "offset_y": 0.09766
+  },
+  {
+    "id": "lord-byron",
+    "name": "Lord Byron",
+    "closed_image": "faces/lord-byron-closed.png",
+    "open_image": "faces/lord-byron-open.png",
+    "quotes": [
+      "Sweet is a legacy, and passing sweet\nThe unexpected death of some old lady"
+    ],
+    "display_name": "Lord Byron",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "c-s-lewis",
+    "name": "C. S. Lewis",
+    "closed_image": "faces/c-s-lewis-closed.png",
+    "open_image": "faces/c-s-lewis-open.png",
+    "quotes": [
+      "The torture allotted to the Danaids in the classical underworld, that of attempting to fill sieves with water, is the symbol not of one vice, but of all vices. It is the very mark of a perverse desire that it seeks what is not to be had."
+    ],
+    "display_name": "C. S. Lewis",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "miriam-margolyes",
+    "name": "Miriam Margolyes",
+    "closed_image": "faces/miriam-margolyes-closed.png",
+    "open_image": "faces/miriam-margolyes-open.png",
+    "quotes": [
+      "It is the vulnerabilities in people, rather than the strengths, that allow us to love them."
+    ],
+    "display_name": "Miriam Margolyes",
+    "offset_x": 0.04883,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "mark-twain",
+    "name": "Mark Twain",
+    "closed_image": "faces/mark-twain-closed.png",
+    "open_image": "faces/mark-twain-open.png",
+    "quotes": [
+      "Clothes make the man. Naked people have little or no influence on society."
+    ],
+    "display_name": "Mark Twain",
+    "offset_x": 0.24414,
+    "offset_y": -0.29297
+  },
+  {
+    "id": "milan-kundera",
+    "name": "Milan Kundera",
+    "closed_image": "faces/milan-kundera-closed.png",
+    "open_image": "faces/milan-kundera-open.png",
+    "quotes": [
+      "Man proceeds in the fog. But when he looks back to judge people of the past, he sees no fog on their path. From his present, which was their faraway future, their path looks perfectly clear to him, good visibility all the way. Looking back, he sees the path, he sees the people proceeding, he sees their mistakes, but not the fog."
+    ],
+    "display_name": "Milan Kundera",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "j-l-carr",
+    "name": "J. L. Carr",
+    "closed_image": "faces/j-l-carr-closed.png",
+    "open_image": "faces/j-l-carr-open.png",
+    "quotes": [
+      "We can ask and ask but we can't have again what once seemed ours forever"
+    ],
+    "display_name": "J. L. Carr",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "alexander-pope",
+    "name": "Alexander Pope",
+    "closed_image": "faces/alexander-pope-closed.png",
+    "open_image": "faces/alexander-pope-open.png",
+    "quotes": [
+      "Who breaks a butterfly upon a wheel?",
+      "What oft was thought, but ne'er so well express'd"
+    ],
+    "display_name": "Alexander Pope",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "archimedes",
+    "name": "Archimedes",
+    "closed_image": "faces/archimedes-closed.png",
+    "open_image": "faces/archimedes-open.png",
+    "quotes": [
+      "Give me a place to stand, and a lever long enough, and I will move the world."
+    ],
+    "display_name": "Archimedes",
+    "offset_x": 0.04883,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "david-senra",
+    "name": "David Senra",
+    "closed_image": "faces/david-senra-closed.png",
+    "open_image": "faces/david-senra-open.png",
+    "quotes": [
+      "Whatever it is that you were given, I will get for myself."
+    ],
+    "display_name": "David Senra",
+    "offset_x": 0.04883,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "bible",
+    "name": "bible",
+    "closed_image": "faces/bible-closed.png",
+    "open_image": "faces/bible-open.png",
+    "quotes": [
+      "He who has an ear, let him hear what the Spirit says to the churches: He who overcomes will not be hurt by the second death.",
+      "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning.",
+      "And I looked, and beheld a pale horse: and his name that sat on him was Death, and Hell followed with him. And power was given unto them over the fourth part of the earth, to kill with sword, and with hunger, and with death, and with the beasts of the earth.",
+      "For as the crackling of thorns under a pot, so is the laughter of fools.",
+      "For what shall it profit a man, if he gain the whole world, and suffer the loss of his soul",
+      "So he sent for a bowl of water and washed his hands before the crowd, saying, \"I am innocent of this man's blood. The responsibility is yours!\""
+    ],
+    "display_name": "bible",
+    "kind": "symbol",
+    "offset_x": -0.43945,
+    "offset_y": -2.68555
+  },
+  {
+    "id": "friedrich-nietzsche",
+    "name": "Friedrich Nietzsche",
+    "closed_image": "faces/friedrich-nietzsche-closed.png",
+    "open_image": "faces/friedrich-nietzsche-open.png",
+    "quotes": [
+      "Blame not the bird of prey for eating the lamb, for that is what it does."
+    ],
+    "display_name": "Friedrich Nietzsche",
+    "offset_x": -7.32422,
+    "offset_y": -1.70898
+  },
+  {
+    "id": "william-faulkner",
+    "name": "William Faulkner",
+    "closed_image": "faces/william-faulkner-closed.png",
+    "open_image": "faces/william-faulkner-open.png",
+    "quotes": [
+      "You cannot swim for new horizons until you find the courage to lose sight of the shore."
+    ],
+    "display_name": "William Faulkner",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "christopher-hitchens",
+    "name": "Christopher Hitchens",
+    "closed_image": "faces/christopher-hitchens-closed.png",
+    "open_image": "faces/christopher-hitchens-open.png",
+    "quotes": [
+      "When asked what he most disliked about his appearance, Christopher Hitchens responded, the way it makes former admirers search for neutral words."
+    ],
+    "display_name": "Christopher Hitchens",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "john-adams",
+    "name": "John Adams",
+    "closed_image": "faces/john-adams-closed.png",
+    "open_image": "faces/john-adams-open.png",
+    "quotes": [
+      "I study politics and war, that my sons may have the liberty to study mathematics, commerce and agriculture. And my sons must study mathematics, commerce and agriculture, that their sons may have the freedom to study painting, poetry, music and architecture."
+    ],
+    "display_name": "John Adams",
+    "offset_x": 0.0,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "immanuel-kant",
+    "name": "Immanuel Kant",
+    "closed_image": "faces/immanuel-kant-closed.png",
+    "open_image": "faces/immanuel-kant-open.png",
+    "quotes": [
+      "Out of the crooked timber of humanity, no straight thing was ever made"
+    ],
+    "display_name": "Immanuel Kant",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "virgil",
+    "name": "Virgil",
+    "closed_image": "faces/virgil-closed.png",
+    "open_image": "faces/virgil-open.png",
+    "quotes": [
+      "Sic itur ad astra",
+      "Per aspera ad astra"
+    ],
+    "display_name": "Virgil",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "david-brooks",
+    "name": "David Brooks",
+    "closed_image": "faces/david-brooks-closed.png",
+    "open_image": "faces/david-brooks-open.png",
+    "quotes": [
+      "What writers do is they tell other beggars where they found bread.",
+      "A man stands at the edge of a river and calls out to another man on the opposite bank, \"How do I get to the other side of the river?\" The man across the water replies, \"You are already on the other side.\"",
+      "We don’t see with our eyes, we see with our whole life."
+    ],
+    "display_name": "David Brooks",
+    "offset_x": 0.09766,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "augustus",
+    "name": "Augustus",
+    "closed_image": "faces/augustus-closed.png",
+    "open_image": "faces/augustus-open.png",
+    "quotes": [
+      "If I’ve played my part well, dismiss me from the stage with applause."
+    ],
+    "display_name": "Augustus",
+    "offset_x": -0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "heraclitus",
+    "name": "Heraclitus",
+    "closed_image": "faces/heraclitus-closed.png",
+    "open_image": "faces/heraclitus-open.png",
+    "quotes": [
+      "No man steps in the same river twice."
+    ],
+    "display_name": "Heraclitus",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "winston-churchill",
+    "name": "Winston Churchill",
+    "closed_image": "faces/winston-churchill-closed.png",
+    "open_image": "faces/winston-churchill-open.png",
+    "quotes": [
+      "Little men let events take their course. I like things to happen, and if they don’t happen I like to make them happen.",
+      "Don’t adapt your facts to your phrases."
+    ],
+    "display_name": "Winston Churchill",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "john-milton",
+    "name": "John Milton",
+    "closed_image": "faces/john-milton-closed.png",
+    "open_image": "faces/john-milton-open.png",
+    "quotes": [
+      "The mind is its own place, and in itself can make a heaven of hell, a hell of heaven."
+    ],
+    "display_name": "John Milton",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "george-bernard-shaw",
+    "name": "George Bernard Shaw",
+    "closed_image": "faces/george-bernard-shaw-closed.png",
+    "open_image": "faces/george-bernard-shaw-open.png",
+    "quotes": [
+      "Liberty means responsibility. That is why most men dread it."
+    ],
+    "display_name": "George Bernard Shaw",
+    "offset_x": 0.0,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "lao-tzu",
+    "name": "Lao Tzu",
+    "closed_image": "faces/lao-tzu-closed.png",
+    "open_image": "faces/lao-tzu-open.png",
+    "quotes": [
+      "Watch your thoughts, they become your words; watch your words, they become your actions; watch your actions, they become your habits; watch your habits, they become your character; watch your character, it becomes your destiny."
+    ],
+    "display_name": "Lao Tzu",
+    "offset_x": -0.14648,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "andre-gide",
+    "name": "André Gide",
+    "closed_image": "faces/andre-gide-closed.png",
+    "open_image": "faces/andre-gide-open.png",
+    "quotes": [
+      "Trust those who seek the truth, but doubt those who say they’ve found it"
+    ],
+    "display_name": "André Gide",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "thomas-babington-macaulay",
+    "name": "Thomas Babington Macaulay",
+    "closed_image": "faces/thomas-babington-macaulay-closed.png",
+    "open_image": "faces/thomas-babington-macaulay-open.png",
+    "quotes": [
+      "We know no spectacle so ridiculous as the British public in one of its periodical fits of morality."
+    ],
+    "display_name": "Thomas Babington Macaulay",
+    "offset_x": -0.09766,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "lady-lytton",
+    "name": "Lady Lytton",
+    "closed_image": "faces/lady-lytton-closed.png",
+    "open_image": "faces/lady-lytton-open.png",
+    "quotes": [
+      "The first time you meet Winston [Churchill] you see all his faults, and the rest of your life you spend in discovering his virtues."
+    ],
+    "display_name": "Lady Lytton",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "w-h-auden",
+    "name": "W. H. Auden",
+    "closed_image": "faces/w-h-auden-closed.png",
+    "open_image": "faces/w-h-auden-open.png",
+    "quotes": [
+      "Private faces in public places are wiser and nicer than public faces in private places."
+    ],
+    "display_name": "W. H. Auden",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "socrates",
+    "name": "Socrates",
+    "closed_image": "faces/socrates-closed.png",
+    "open_image": "faces/socrates-open.png",
+    "quotes": [
+      "It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit."
+    ],
+    "display_name": "Socrates",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "nelson-mandela",
+    "name": "Nelson Mandela",
+    "closed_image": "faces/nelson-mandela-closed.png",
+    "open_image": "faces/nelson-mandela-open.png",
+    "quotes": [
+      "It is wrong. I have seen it. What are you going to do about it?"
+    ],
+    "display_name": "Nelson Mandela",
+    "offset_x": 0.04883,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "charlotte-aisse",
+    "name": "Charlotte Aïssé",
+    "closed_image": "faces/charlotte-aisse-closed.png",
+    "open_image": "faces/charlotte-aisse-open.png",
+    "quotes": [
+      "No man is a hero to his valet."
+    ],
+    "display_name": "Charlotte Aïssé",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "evelyn-waugh",
+    "name": "Evelyn Waugh",
+    "closed_image": "faces/evelyn-waugh-closed.png",
+    "open_image": "faces/evelyn-waugh-open.png",
+    "quotes": [
+      "I went there uncertainly, for it was foreign ground and there was a tiny, priggish, warning voice in my ear which in the tones of Collins told me it was seemly to hold back. But I was in search of love in those days, and I went full of curiosity and the faint, unrecognized apprehension that here, at last, I should find that low door in the wall, which others, I knew had found before me, which opened on an enclosed and enchanted garden, which was somewhere, not overlooked by any window, in the heart of that grey city.",
+      "Other nations use force, we Britons alone use might"
+    ],
+    "display_name": "Evelyn Waugh",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "ambrose-bierce",
+    "name": "Ambrose Bierce",
+    "closed_image": "faces/ambrose-bierce-closed.png",
+    "open_image": "faces/ambrose-bierce-open.png",
+    "quotes": [
+      "War is God's way of teaching Americans geography."
+    ],
+    "display_name": "Ambrose Bierce",
+    "offset_x": 0.04883,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "henry-ii-of-england",
+    "name": "Henry II of England",
+    "closed_image": "faces/henry-ii-of-england-closed.png",
+    "open_image": "faces/henry-ii-of-england-open.png",
+    "quotes": [
+      "Will no one rid me of this turbulent priest?"
+    ],
+    "display_name": "Henry II of England",
+    "offset_x": 0.09766,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "saint-augustine",
+    "name": "Saint Augustine",
+    "closed_image": "faces/saint-augustine-closed.png",
+    "open_image": "faces/saint-augustine-open.png",
+    "quotes": [
+      "O Lord, help me to be pure, but not yet."
+    ],
+    "display_name": "Saint Augustine",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "edward-bulwer-lytton",
+    "name": "Edward Bulwer-Lytton",
+    "closed_image": "faces/edward-bulwer-lytton-closed.png",
+    "open_image": "faces/edward-bulwer-lytton-open.png",
+    "quotes": [
+      "Talent does what it can; genius does what it must."
+    ],
+    "display_name": "Edward Bulwer-Lytton",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "thomas-henry-huxley",
+    "name": "Thomas Henry Huxley",
+    "closed_image": "faces/thomas-henry-huxley-closed.png",
+    "open_image": "faces/thomas-henry-huxley-open.png",
+    "quotes": [
+      "Perhaps the most valuable result of all education is the ability to make yourself do the thing you have to do, when it ought to be done, whether you like it or not; it is the first lesson that ought to be learned; and however early a man's training begins, it is probably the last lesson that he learns thoroughly."
+    ],
+    "display_name": "Thomas Henry Huxley",
+    "offset_x": 0.09766,
+    "offset_y": -0.09766
+  },
+  {
+    "id": "juvenal",
+    "name": "Juvenal",
+    "closed_image": "faces/juvenal-closed.png",
+    "open_image": "faces/juvenal-open.png",
+    "quotes": [
+      "Who will watch the watchmen"
+    ],
+    "display_name": "Juvenal",
+    "offset_x": 0.04883,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "james-russell-lowell",
+    "name": "James Russell Lowell",
+    "closed_image": "faces/james-russell-lowell-closed.png",
+    "open_image": "faces/james-russell-lowell-open.png",
+    "quotes": [
+      "Time makes ancient good uncouth"
+    ],
+    "display_name": "James Russell Lowell",
+    "offset_x": 0.0,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "arthur-schopenhauer",
+    "name": "Arthur Schopenhauer",
+    "closed_image": "faces/arthur-schopenhauer-closed.png",
+    "open_image": "faces/arthur-schopenhauer-open.png",
+    "quotes": [
+      "A man can do what he will, but not will as he will"
+    ],
+    "display_name": "Arthur Schopenhauer",
+    "offset_x": 0.04883,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "harry-goodhart-rendel",
+    "name": "Harry Goodhart-Rendel",
+    "closed_image": "faces/harry-goodhart-rendel-closed.png",
+    "open_image": "faces/harry-goodhart-rendel-open.png",
+    "quotes": [
+      "The modern architectural drawing is interesting, the photograph is magnificent, the building is an unfortunate but necessary stage between the two"
+    ],
+    "display_name": "Harry Goodhart-Rendel",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "abraham-maslow",
+    "name": "Abraham Maslow",
+    "closed_image": "faces/abraham-maslow-closed.png",
+    "open_image": "faces/abraham-maslow-open.png",
+    "quotes": [
+      "I suppose it is tempting, if the only tool you had is a hammer, to treat everything as if it were a nail"
+    ],
+    "display_name": "Abraham Maslow",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "michel-foucault",
+    "name": "Michel Foucault",
+    "closed_image": "faces/michel-foucault-closed.png",
+    "open_image": "faces/michel-foucault-open.png",
+    "quotes": [
+      "Whoever determines what may be discussed, determines what may be known."
+    ],
+    "display_name": "Michel Foucault",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "boris-yeltsin",
+    "name": "Boris Yeltsin",
+    "closed_image": "faces/boris-yeltsin-closed.png",
+    "open_image": "faces/boris-yeltsin-open.png",
+    "quotes": [
+      "You can build a throne with bayonets, but you can't sit on it for long"
+    ],
+    "display_name": "Boris Yeltsin",
+    "offset_x": 0.04883,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "henry-david-thoreau",
+    "name": "Henry David Thoreau",
+    "closed_image": "faces/henry-david-thoreau-closed.png",
+    "open_image": "faces/henry-david-thoreau-open.png",
+    "quotes": [
+      "Unjust laws exist;\nShall we be content to obey them or shall we endeavour to amend them and obey them until we have succeeded,\nOr shall we transgress them at once?"
+    ],
+    "display_name": "Henry David Thoreau",
+    "offset_x": 0.19531,
+    "offset_y": 0.0
+  },
+  {
+    "id": "j-edgar-hoover",
+    "name": "J. Edgar Hoover",
+    "closed_image": "faces/j-edgar-hoover-closed.png",
+    "open_image": "faces/j-edgar-hoover-open.png",
+    "quotes": [
+      "The cure for crime is not the electric chair, but the high chair."
+    ],
+    "display_name": "J. Edgar Hoover",
+    "offset_x": 0.04883,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "walter-benjamin",
+    "name": "Walter Benjamin",
+    "closed_image": "faces/walter-benjamin-closed.png",
+    "open_image": "faces/walter-benjamin-open.png",
+    "quotes": [
+      "Behind every fascism is a failed revolution"
+    ],
+    "display_name": "Walter Benjamin",
+    "offset_x": 0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "henry-wadsworth-longfellow",
+    "name": "Henry Wadsworth Longfellow",
+    "closed_image": "faces/henry-wadsworth-longfellow-closed.png",
+    "open_image": "faces/henry-wadsworth-longfellow-open.png",
+    "quotes": [
+      "The heights by great men reached and kept were not attained by sudden flight, but they, while their companions slept, were toiling upward in the night.",
+      "We judge ourselves by what we feel capable of doing, while others judge us by what we have already done."
+    ],
+    "display_name": "Henry Wadsworth Longfellow",
+    "offset_x": 0.04883,
+    "offset_y": 0.04883
+  },
+  {
+    "id": "kwame-nkrumah",
+    "name": "Kwame Nkrumah",
+    "closed_image": "faces/kwame-nkrumah-closed.png",
+    "open_image": "faces/kwame-nkrumah-open.png",
+    "quotes": [
+      "We face neither East nor West: we face forward."
+    ],
+    "display_name": "Kwame Nkrumah",
+    "offset_x": 0.0,
+    "offset_y": -0.04883
+  },
+  {
+    "id": "max-planck",
+    "name": "Max Planck",
+    "closed_image": "faces/max-planck-closed.png",
+    "open_image": "faces/max-planck-open.png",
+    "quotes": [
+      "Science advances one funeral at a time"
+    ],
+    "display_name": "Max Planck",
+    "offset_x": -0.04883,
+    "offset_y": 0.0
+  },
+  {
+    "id": "david-paul-kuhn",
+    "name": "David Paul Kuhn",
+    "closed_image": "faces/david-paul-kuhn-closed.png",
+    "open_image": "faces/david-paul-kuhn-open.png",
+    "quotes": [
+      "We can look for the worst in our opponents, but that doesn’t always explain how they got the best of us."
+    ],
+    "display_name": "David Paul Kuhn",
+    "offset_x": 0.0,
+    "offset_y": 0.0
+  },
+  {
+    "id": "albert-camus",
+    "name": "Albert Camus",
+    "closed_image": "faces/albert-camus-closed.png",
+    "open_image": "faces/albert-camus-open.png",
+    "quotes": [
+      "Those who prefer their principles over their happiness, they refuse to be happy outside the conditions they seem to have attached to their happiness."
+    ],
+    "display_name": "Albert Camus",
+    "offset_x": 0.04883,
+    "offset_y": 0.04883
+  }
+]

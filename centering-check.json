@@ -1,0 +1,917 @@
+[
+  {
+    "author": "William Shakespeare",
+    "visible_bounds": [
+      112,
+      92,
+      912,
+      931
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Johann Wolfgang von Goethe",
+    "visible_bounds": [
+      212,
+      107,
+      900,
+      932
+    ],
+    "offset_x_percent": -4.29688,
+    "offset_y_percent": -0.73242,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Ralph Waldo Emerson",
+    "visible_bounds": [
+      156,
+      93,
+      866,
+      932
+    ],
+    "offset_x_percent": 0.09766,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Arthur Balfour, Earl of Balfour",
+    "visible_bounds": [
+      208,
+      92,
+      816,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Saint Francis of Assisi",
+    "visible_bounds": [
+      160,
+      93,
+      866,
+      930
+    ],
+    "offset_x_percent": -0.09766,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "George Washington",
+    "visible_bounds": [
+      92,
+      114,
+      932,
+      910
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Samuel Johnson",
+    "visible_bounds": [
+      110,
+      93,
+      914,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "G. K. Chesterton",
+    "visible_bounds": [
+      117,
+      92,
+      908,
+      932
+    ],
+    "offset_x_percent": -0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Conor McPherson",
+    "visible_bounds": [
+      218,
+      94,
+      806,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.09766,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Geoffrey Chaucer",
+    "visible_bounds": [
+      158,
+      92,
+      865,
+      930
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.09766,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Lord Byron",
+    "visible_bounds": [
+      181,
+      92,
+      843,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "C. S. Lewis",
+    "visible_bounds": [
+      216,
+      92,
+      808,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Miriam Margolyes",
+    "visible_bounds": [
+      140,
+      93,
+      883,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Mark Twain",
+    "visible_bounds": [
+      121,
+      98,
+      898,
+      932
+    ],
+    "offset_x_percent": 0.24414,
+    "offset_y_percent": -0.29297,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Milan Kundera",
+    "visible_bounds": [
+      190,
+      92,
+      833,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "J. L. Carr",
+    "visible_bounds": [
+      199,
+      92,
+      824,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Alexander Pope",
+    "visible_bounds": [
+      130,
+      92,
+      894,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Archimedes",
+    "visible_bounds": [
+      182,
+      92,
+      841,
+      931
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "David Senra",
+    "visible_bounds": [
+      202,
+      93,
+      821,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "bible",
+    "visible_bounds": [
+      296,
+      178,
+      737,
+      901
+    ],
+    "offset_x_percent": -0.43945,
+    "offset_y_percent": -2.68555,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "visible_bounds": [
+      285,
+      127,
+      889,
+      932
+    ],
+    "offset_x_percent": -7.32422,
+    "offset_y_percent": -1.70898,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "William Faulkner",
+    "visible_bounds": [
+      202,
+      92,
+      822,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Christopher Hitchens",
+    "visible_bounds": [
+      212,
+      93,
+      812,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "John Adams",
+    "visible_bounds": [
+      93,
+      106,
+      931,
+      917
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Immanuel Kant",
+    "visible_bounds": [
+      101,
+      93,
+      923,
+      931
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Virgil",
+    "visible_bounds": [
+      195,
+      93,
+      829,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "David Brooks",
+    "visible_bounds": [
+      189,
+      93,
+      833,
+      932
+    ],
+    "offset_x_percent": 0.09766,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Augustus",
+    "visible_bounds": [
+      183,
+      92,
+      842,
+      932
+    ],
+    "offset_x_percent": -0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Heraclitus",
+    "visible_bounds": [
+      227,
+      92,
+      796,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Winston Churchill",
+    "visible_bounds": [
+      193,
+      93,
+      830,
+      931
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "John Milton",
+    "visible_bounds": [
+      150,
+      92,
+      874,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "George Bernard Shaw",
+    "visible_bounds": [
+      229,
+      92,
+      795,
+      931
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Lao Tzu",
+    "visible_bounds": [
+      217,
+      92,
+      810,
+      931
+    ],
+    "offset_x_percent": -0.14648,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "André Gide",
+    "visible_bounds": [
+      197,
+      93,
+      827,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Thomas Babington Macaulay",
+    "visible_bounds": [
+      184,
+      93,
+      842,
+      932
+    ],
+    "offset_x_percent": -0.09766,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Lady Lytton",
+    "visible_bounds": [
+      101,
+      93,
+      923,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "W. H. Auden",
+    "visible_bounds": [
+      193,
+      93,
+      831,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Socrates",
+    "visible_bounds": [
+      200,
+      93,
+      824,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Nelson Mandela",
+    "visible_bounds": [
+      195,
+      93,
+      828,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Charlotte Aïssé",
+    "visible_bounds": [
+      213,
+      92,
+      811,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Evelyn Waugh",
+    "visible_bounds": [
+      204,
+      92,
+      819,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Ambrose Bierce",
+    "visible_bounds": [
+      155,
+      93,
+      868,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Henry II of England",
+    "visible_bounds": [
+      164,
+      92,
+      858,
+      931
+    ],
+    "offset_x_percent": 0.09766,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Saint Augustine",
+    "visible_bounds": [
+      218,
+      93,
+      805,
+      931
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Edward Bulwer-Lytton",
+    "visible_bounds": [
+      187,
+      92,
+      836,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Thomas Henry Huxley",
+    "visible_bounds": [
+      150,
+      95,
+      872,
+      931
+    ],
+    "offset_x_percent": 0.09766,
+    "offset_y_percent": -0.09766,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Juvenal",
+    "visible_bounds": [
+      194,
+      93,
+      829,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "James Russell Lowell",
+    "visible_bounds": [
+      178,
+      92,
+      846,
+      931
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Arthur Schopenhauer",
+    "visible_bounds": [
+      107,
+      93,
+      916,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Harry Goodhart-Rendel",
+    "visible_bounds": [
+      189,
+      92,
+      834,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Abraham Maslow",
+    "visible_bounds": [
+      176,
+      93,
+      848,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Michel Foucault",
+    "visible_bounds": [
+      182,
+      93,
+      841,
+      931
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Boris Yeltsin",
+    "visible_bounds": [
+      209,
+      93,
+      814,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Henry David Thoreau",
+    "visible_bounds": [
+      186,
+      92,
+      834,
+      932
+    ],
+    "offset_x_percent": 0.19531,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "J. Edgar Hoover",
+    "visible_bounds": [
+      209,
+      92,
+      814,
+      931
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Walter Benjamin",
+    "visible_bounds": [
+      207,
+      92,
+      816,
+      932
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Henry Wadsworth Longfellow",
+    "visible_bounds": [
+      152,
+      93,
+      871,
+      930
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Kwame Nkrumah",
+    "visible_bounds": [
+      212,
+      93,
+      812,
+      932
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": -0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Max Planck",
+    "visible_bounds": [
+      173,
+      92,
+      852,
+      932
+    ],
+    "offset_x_percent": -0.04883,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "David Paul Kuhn",
+    "visible_bounds": [
+      204,
+      93,
+      820,
+      931
+    ],
+    "offset_x_percent": 0.0,
+    "offset_y_percent": 0.0,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  },
+  {
+    "author": "Albert Camus",
+    "visible_bounds": [
+      234,
+      92,
+      789,
+      931
+    ],
+    "offset_x_percent": 0.04883,
+    "offset_y_percent": 0.04883,
+    "recess_center_percent": [
+      50.1,
+      44.2
+    ]
+  }
+]
