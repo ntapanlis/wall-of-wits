@@ -19,23 +19,53 @@ in the browser — zero secrets, zero server, same hosting model as
 `imprimatur`. See `GOOGLE-SHEET-SETUP.md` for how it's wired and
 `ADMIN-GUIDE.md` for everyday edits.
 
-## Verified
+A second pass (per `claude-panel-update 2/CLAUDE-INSTRUCTIONS.md`) replaced
+the floating cream quote card with an in-flow "opening wall panel": a
+periwinkle-cement seam that splits the wall open beneath the selected
+face's row, with reused ornamental corner/medallion SVGs, carved selection
+rays (`arch-radiance.svg`) around the chosen arch, italic unmarked
+quotations, and a single shared plaque font-size that shrinks uniformly
+until every name fits.
 
-- Sheet is reachable without login and both tabs parse correctly (checked
-  via `curl` against the CSV export URLs)
-- All 61 authors present and included, 79 quotes present, the one custom
-  plaque name (Arthur Balfour) came through correctly
-- `index.html`'s live-fetch/reconcile logic reviewed line by line (CSV
-  parser, slug-matching against `authors-manifest.js`, shuffle/reconcile
-  behavior on refresh)
+## Verified live, on https://ntapanlis.github.io/wall-of-wits/
+
+- All 61 authors load from the Sheet; 4/3/2 responsive columns render
+  correctly; empty recesses fill the final row
+- Click opens the panel in-flow directly after the clicked face's row
+  (confirmed for a middle row, and for the last author in the shuffled
+  order, i.e. the final row)
+- Same-row switch, different-row switch, and three rapid successive
+  clicks all resolve to exactly one panel with the correct final content —
+  no duplicates, no stale text
+- Escape and the Close button both close it
+- Quotes render italic, justified with a left-aligned last line, in
+  `#303442`, with no added quotation marks and no repeated author-name
+  heading; the panel's only name reference is a non-visible
+  `aria-label="Quotations by <name>"` on the region
+- Periwinkle panel colors/borders match spec exactly (`#bfc4d5` background,
+  `#9199b0`/`#dce0eb` edges), confirmed via computed styles
+- The uniform plaque-font-shrink algorithm works: at a narrow width it
+  shrank the shared size below its normal cap specifically to fit the
+  longest names, rather than truncating or shrinking one name alone
+- `aria-expanded`/`aria-controls`/accessible labels all correct;
+  `request()`'s async queue reliably handles rapid clicks (most recent
+  selection wins)
+- The resize-repositioning *logic* itself (recomputing the selected
+  face's row/height after a column-count change, without reshuffling or
+  losing selection) was verified directly and is correct. The automatic
+  trigger for it — a `ResizeObserver` on the wall — could not be exercised
+  in this session's browser tooling: that tab's rendering pipeline wasn't
+  actively compositing (confirmed independently — even a plain test
+  element's `ResizeObserver` and a running CSS transition were both stuck,
+  unrelated to this code), which is a property of this working session's
+  tooling, not of a normal browser tab. `ResizeObserver` is standard,
+  universally-supported behavior; worth a real resize check in an ordinary
+  browser regardless, as final confirmation.
 
 ## Not yet verified
 
-- Actually loading the deployed page in a browser and confirming the wall
-  renders, hover/click/panel behavior works, and the Sheet data shows up
-  live. Both sandboxed browsers available in this working session hit
-  environment-specific snags trying to preview it (one only renders local
-  files as static non-executing snapshots; the other's process launcher
-  denied a permission unrelated to this code) — worth a real look at
-  https://ntapanlis.github.io/wall-of-wits/ once Pages finishes its first
-  build.
+- A literal pixel screenshot of the open panel and the carved rays — the
+  same non-compositing tab issue blocked `computer.screenshot` throughout
+  this session. Everything it would show was instead confirmed via
+  computed-style and DOM assertions (see above). Worth a quick visual
+  glance at the live URL.
